@@ -26,9 +26,9 @@ class ComprehensibleRegex:
         return "{"+str(n)+"}"
     def either_or(self,a,b) -> str:
         return a+"|"+b
-    def capture_and_group(self,group):
+    def capture_and_group(self,group) -> str:
         return "("+group+")"
-    def format_one(self,a):
+    def format_one(self,a) -> str:
         return "{}".format(a)
-    def format_two(self,a,b):
+    def format_two(self,a,b) -> str:
         return "{}{}".format(a,b)
